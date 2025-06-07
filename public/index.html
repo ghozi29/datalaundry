@@ -78,7 +78,6 @@
                 <th>Jumlah</th>
                 <th>Berat</th>
                 <th>Layanan</th>
-                <th>Tanggal</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -105,13 +104,11 @@ $(document).ready(function() {
                     const row = `
                         <tr>
                             <td>${index + 1}</td>
-                            <td>${item.tanggal || 'N/A'}</td>
                             <td>${item.nama || 'N/A'}</td>
                             <td>${item.harga || 'N/A'}</td>
                             <td>${item.jumlah || 'N/A'}</td>
                             <td>${item.berat || 'N/A'}</td>
                             <td>${item.layanan || 'N/A'}</td>
-                            <td>${item.tanggal || 'N/A'}</td>
                             <td><button class="delete-button" data-id="${item.id}">Delete</button></td>
                         </tr>
                     `;
