@@ -79,6 +79,8 @@
                 <th>Berat(KG)</th>
                 <th>Layanan</th>
                  <th>Tanggak Masuk</th>
+                 <th>Tanggak Selesai</th>
+                 <th>Code</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -111,6 +113,8 @@ $(document).ready(function() {
                             <td>${item.berat || 'N/A'}</td>
                             <td>${item.layanan || 'N/A'}</td>
                              <td>${item.tanggal || 'N/A'}</td>
+                             <td>${item.tanggalPengambilan || 'N/A'}</td>
+                             <td>${item.code || 'N/A'}</td>
                             <td><button class="delete-button" data-id="${item.id}">Delete</button></td>
                         </tr>
                     `;
